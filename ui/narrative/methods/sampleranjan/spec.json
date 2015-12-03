@@ -1,0 +1,56 @@
+{
+	"ver": "0.0.1",
+	
+	"authors": [
+		"prajan77"
+	],
+	"contact": "help@kbase.us",
+	"visible": true,
+	"categories": ["active"],
+	"widgets": {
+		"input": null,
+		"output": null
+	},
+	"parameters": [ 
+		{
+			"id": "myname",
+			"optional": false,
+			"advanced": false,
+			"allow_multiple": false,
+			"default_values": [ "" ],
+			"field_type": "text"
+		}
+	],
+	"behavior": {
+		"service-mapping": {
+			"url": "",
+			"name": "ranjansample",
+			"method": "myfunc1",
+			"input_mapping": [
+				{
+					"narrative_system_variable": "workspace",
+					"target_argument_position": 0
+				},
+				{
+					"input_parameter": "myname",
+					"target_argument_position": 1
+				}
+			],
+			"output_mapping": [
+				{
+					"service_method_output_path": [0, "contig_count"],
+					"target_property": "contigCount"
+				},
+				{
+					"input_parameter": "myname",
+					"target_property": "myname"
+				},
+				{
+					"narrative_system_variable": "workspace",
+					"target_property": "wrkspace"
+				}
+			]
+		}
+	},
+	"job_id_output_field": "docker"
+}
