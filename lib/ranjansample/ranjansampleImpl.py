@@ -19,6 +19,7 @@ class ranjansample:
     #########################################
     #BEGIN_CLASS_HEADER
     workspaceURL = None
+    myprops = None
     #END_CLASS_HEADER
 
     # config contains contents of config file in a hash or None if it couldn't
@@ -26,6 +27,7 @@ class ranjansample:
     def __init__(self, config):
         #BEGIN_CONSTRUCTOR
         self.workspaceURL = config['workspace-url']
+        self.myprops = config['myprops']
         #END_CONSTRUCTOR
         pass
 
@@ -34,9 +36,8 @@ class ranjansample:
         # return variables are: returnVal
         #BEGIN myfunc1
 
-        myprops = config['myprops']
 
-        returnVal = wrkspace + "___" + myname + "___" + myprops
+        returnVal = wrkspace + "___" + myname + "___" + self.myprops
 
         #END myfunc1
 
