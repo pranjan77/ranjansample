@@ -2,7 +2,7 @@
 	"ver": "0.0.1",
 	
 	"authors": [
-		"prajan77"
+		"pranjan77"
 	],
 	"contact": "help@kbase.us",
 	"visible": true,
@@ -38,8 +38,8 @@
 			],
 			"output_mapping": [
 				{
-					"service_method_output_path": [0, "contig_count"],
-					"target_property": "contigCount"
+					"service_method_output_path": [0, "outputmessage"],
+					"target_property": "output"
 				},
 				{
 					"input_parameter": "myname",
