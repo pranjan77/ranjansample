@@ -1,5 +1,5 @@
 {
-	"ver": "0.0.1",
+	"ver": "0.0.3",
 	
 	"authors": [
 		"pranjan77"
@@ -38,7 +38,7 @@
 			],
 			"output_mapping": [
 				{
-					"service_method_output_path": [0, "outputmessage"],
+					"service_method_output_path": [0],
 					"target_property": "output"
 				},
 				{
@@ -47,7 +47,7 @@
 				},
 				{
 					"narrative_system_variable": "workspace",
-					"target_property": "wrkspace"
+					"target_property": "wrkspace00"
 				}
 			]
 		}
