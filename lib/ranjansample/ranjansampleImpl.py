@@ -37,7 +37,7 @@ class ranjansample:
         #BEGIN myfunc1
 
 
-        returnVal = wrkspace + "___" + myname + "___" + self.myprops
+        returnVal = { 'test': "'" + wrkspace + "___" + myname + "___" + self.myprops +"'"}
 
         #END myfunc1
 
