@@ -13,7 +13,9 @@ module ranjansample {
 
 
     /* My outputs */
-    typedef string outputmessage;
+    typedef structure {
+        string test;
+    } outputmessage;
 
     /* My implementation template for the sample */
     funcdef myfunc1(wrkspace, myname)  returns (outputmessage) authentication required;
